@@ -21,7 +21,7 @@ export function LoginSignup() {
   const Login = async() =>{
     console.log('Login function executed',formData)
     let responseData ;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://ec-backend-hvjp.onrender.com/login',{
       method: "POST",
       headers: {
         Accept : 'application/form-data',
@@ -43,7 +43,7 @@ export function LoginSignup() {
   const Signup = async() =>{
     console.log('Sign up function executed',formData)
     let responseData ;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://ec-backend-hvjp.onrender.com/signup',{
       method: "POST",
       headers: {
         Accept : 'application/form-data',

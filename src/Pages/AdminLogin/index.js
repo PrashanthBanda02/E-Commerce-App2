@@ -22,7 +22,7 @@ export function AdminLogin() {
   const Login = async() =>{
     console.log('Login function executed in Admin',formData)
     let responseData ;
-    await fetch('http://localhost:4000/admin/login',{
+    await fetch('https://ec-backend-hvjp.onrender.com/admin/login',{
       method: "POST",
       headers: {
         Accept : 'application/form-data',

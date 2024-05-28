@@ -6,7 +6,7 @@ function NewCollections() {
 
   const [new_collection, setNewCollectios] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:4000/newcollections')
+    fetch('https://ec-backend-hvjp.onrender.com/newcollections')
     .then((response)=> response.json())
     .then((responseData)=>setNewCollectios(responseData))
   },[])
